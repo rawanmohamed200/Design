@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(191, 4%, 76%);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.container {
+  padding: 1rem;
+  margin: 0 auto;
+}
+header {
+  background-image: url("bedroom.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  margin: auto;
+  max-width: 100%;
+}
+
+.content h1 {
+  margin-left: 3rem;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.pragraph1 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: relative;
+  left: 2rem;
+}
+
+#boxl {
+  font-size: 1rem;
+
+  margin: 1rem 5rem;
+  position: relative;
+  left: 1rem;
+}
+
+.highlight {
+  border-color: brown;
+  border-radius: 90px;
+  border: solid rgb(243, 5, 5) 1px;
+  margin: 2px 5px;
+  color: rgb(7, 7, 7);
+  padding: 0.1rem;
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  .content {
+    position: relative;
+    left: 150px;
+    top: 100px;
+  }
+  .highlight {
+    position: relative;
+    left: 50px;
+  }
+  .pragraph1 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: relative;
+    left: 60px;
+  }
+  ul li a {
+    position: relative;
+    top: 15px;
+  }
+  .logo {
+    position: relative;
+    left: 20px;
+  }
+
+  header {
+    background-image: url("bedroom.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+  }
+
+  body {
+    background-color: bisque;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    align-items: center;
+    font-size: 1rem;
+    margin: 2rem auto 0;
+  }
+  header {
+    background-image: url("bedroom.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
